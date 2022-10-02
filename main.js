@@ -30,7 +30,8 @@ clipboardEl.addEventListener('click', () => {
     document.execCommand('copy');
     textarea.remove();
     alert('Password copied to clipboard');
-});
+}
+);
 
 
 generateEl.addEventListener('click', () => {
@@ -69,7 +70,6 @@ function generatePassword(lower, upper, number, symbol, length) {
     //   console.log('funcName:', funcName);
     generatedPassword += randomFunc[funcName] ();
 
-
  });
     } 
 
@@ -77,16 +77,6 @@ function generatePassword(lower, upper, number, symbol, length) {
    return finalPassword;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 function getRandomLower() {
